@@ -10,10 +10,22 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var textView: UILabel!
+    @IBOutlet weak var viewC: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        // Do any additional setup after loading the view, typically from a nib
+        self.view.backgroundColor = UIColor.blue
+        
+        textView.text = "Hellow, iPhone"
+        viewC.backgroundColor = UIColor.red
     }
+    
+    @IBAction func btn1_print(_ sender: Any) {
+        viewC.backgroundColor = UIColor.green
+    }
+    
 
 
 }
